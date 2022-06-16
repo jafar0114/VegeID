@@ -1,0 +1,66 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: rgba(134, 255, 118, 0.993);
+}
+
+.background{
+  background-image: url('/static/images/Background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+  
+}
+
+.box{
+  background-color: #fefefe81;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.box_team_judul{
+  background-color: #fefefed7;
+  justify-content: center;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.box_team{
+  background-color: #abe594e0;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.box_team li{
+  text-align: left;
+  margin-left: 37%;
+}
+
+.box_team table{
+  align-self: center;
+}
+
+.box form{
+  margin-left: 50 px;
+}
+
+.box_anggota li{
+  text-align: left;
+  margin-left: 0%;
+}
+
+footer{
+  background-color: rgb(115, 228, 80);
+}
+
+.by{
+  background-color: rgb(31, 144, 21);
+  padding: 5px;
+  border-radius: 25px 25px 0px 0px;
+}
+ion-icon {
+  font-size: 32px;
+}

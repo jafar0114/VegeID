@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cauliflower</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <title>VEGEID | Detection of Multiple Vegetable</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadaw-sm" style="background-color: #30cc00">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('main') }}">VEGEID</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('teams_page') }}">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('main') }}">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background">
+      <div class="box">
+          
+        <h1>Hasil Prediksi</h1>
+        <h2> Your Prediction    :  {{prediction}} </h2>
+        <img src="{{img_path}}" height="200px" width="200px">
+        <h3> Confident          :  {{ "%.1f"|format(y) }}%</h3>
+          
+      </div>
+    </div>
+    <center>
+      <h2>Cauliflower</h2>
+      <p>
+        Cauliflower (bunga kol) adalah tumbuhan yang termasuk dalam kelompok botrytis dari jenis Brassica oleracea (suku Brassicaceae). Selain itu, tumbuhan ini sebagai sayuran juga lazim dikenal sebagai kubis bunga. Bunga kol berbentuk mirip dengan brokoli. Perbedannya, kubis bunga memiliki kepala bunga yang banyak dan teratur dengan padat. Bunga kol merupakan sumber vitamin dan mineral dan lazimnya dimakan dengan dimasak terlebih dahulu, meskipun dapat pula dimakan mentah maupun dijadikan acar. Bunga kol juga merupakan sumber penting protein, tiamin, riboflavin, niasin, kalsium, besi, magnesium, fosfor, dan zink, serta sangat baik sebagai sumber serat makanan, vitamin B6, asam folat, asam pantotenat, dan kalium. Sayur ini mengandung sedikit lemak jenuh, dan sangat sedikit kolesterol (kurang dari 1 g per kg). 
+      </p>
+    </center>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingone">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1. Cah Kembang Kol Baso</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Cah kembang kol baso</strong> merupakan makanan yang terbuat dari bahan kembang kol dan baso yang diolah dengan bumbu-bumbu sehingga menghasilkan cita rasa yang enak. 
+            <p>Bahan-bahan:</p>
+            <p>Bahan 1 :</p>
+            <ul>
+              <li>5 buah Baso, diiris bulat 4 bagian</li>
+              <li>200 g Kembang Kol, dipotong serasi</li>
+              <li>1 buah Wortel, dibelah lalu dirajang serong</li>
+              <li>75 g Kapri, dipotong serong 2 bagian</li>
+              <li>2 buah Cabe Merah, dirajang serong</li>
+            </ul>
+            <p>Bahan 2 :</p>
+            <ul>
+              <li>1/2 sdm Kecap Asin</li>
+              <li>1 sdt Saus Tiram</li>
+              <li>1 sdt Minyak Wijen</li>
+            </ul>
+            <p>Bahan 3 :</p>
+            <ul>
+              <li>1/2 sdt Garam</li>
+              <li>1 sdt Gula Pasir</li>
+              <li>1/2 sdt Ladaku Merica Bubuk</li>
+            </ul>
+            <p>Bahan 4 :</p>
+            <ul>
+              <li>4 sdm Minyak Goreng</li>
+              <li>3 siung Bawang Putih, dimemarkan</li>
+              <li>1 batang Daun Bawang, dirajang serong</li>
+              <li>6 sdm Air</li>
+              <li>sdt Tepung Tapioka, dilarutkan dengan 2 sdm Air</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/So5-HIzu1vQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingtwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. Bunga Kol Goreng Saos Asam Pedas Manis</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Bunga kol goreng saos asam pedas manis</strong> merupakan olahan makanan yang terbuat dari bahan bunga kol yang digoreng ke dalam saus asam pedas manis. Tentu saja rasanya yang nikmat, banyak masayarakat yang menyukai makanan tersebut.
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>1 mangkuk bunga kol</li>
+              <li>3sdm terigu</li>
+              <li>2sdm maizena</li>
+              <li>1/2sdt garam</li>
+              <li>1/4sdt lada</li>
+              <li>50ml air</li>
+              <li>3 siung bawang putih</li>
+              <li>Sedikit jahe</li>
+              <li>2 buah cabe rawit merah</li>
+              <li>1/4 buah bawang bombay</li>
+              <li>Daun bawang secukupnya</li>
+              <li>1/2sdt kaldu ayam bubuk</li>
+              <li>1/2sdt kecap asin</li>
+              <li>1/2sdt saos tiram</li>
+              <li>5sdm saos tomat</li>
+              <li>Sedikit air</li>
+              <li>Sejumput gula</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/J5eYDrQ0ixU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingthree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. Tumis Kembang Kol</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Tumis kembang kol</strong> merupakan salah satu olahan kembang kol yang ditumis dengan bumbum-bumbu yang mmebuat cita rasanya semakin sedap dengan kaya akan manfaat baik untuk tubuh. 
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>250 gr kembang kol</li>
+              <li>4 bawang merah</li>
+              <li>2 bawang putih</li>
+              <li>3 cabe rawit</li>
+              <li>1/5 tomat</li>
+              <li>1 telur</li>
+              <li>100 ml air</li>
+              <li>kaldu bubuk</li>
+              <li>garam</li>
+              <li>gula</li>
+              <li>merica</li>
+              <li>2 sdm saos sambal</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/i-LXXp1h_nE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <footer>
+    <table style="margin-left: 250px;">
+      <tr>
+        <td><img src="/static/images/Logo VEGEID Web.png" alt="VEGEIG" width="150" height="150"/></td>
+        <td >
+          <h2>VegeID</h2>
+          <h3>Detection of Multiple Vegetable</h3>
+        </td>
+      </tr>
+    </table>
+    <table style="margin-top:5px; margin-left: 250px; margin-bottom: 5px;">
+      <tr>
+        <td>
+          <table style="margin-left: 25px;">
+            <td><ion-icon name="mail-outline"></ion-icon></td>
+            <td><h4>VegeID.Organizer@gmail.com</h4></td>
+          </table>
+        </td>
+        <td>
+          <table style="margin-left: 100px;">
+            <td><ion-icon name="call-outline"></ion-icon></td>
+            <td><h4>0895-3942-20248</h4></td>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div class="by">
+      <center><p>Detection of Multiple Vegetable by VegeIDTeams</p></center>
+    </div>
+  </footer>
+</html>

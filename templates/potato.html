@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>potato</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <title>VEGEID | Detection of Multiple Vegetable</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadaw-sm" style="background-color: #30cc00">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('main') }}">VEGEID</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('teams_page') }}">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('main') }}">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background">
+      <div class="box">
+          
+        <h1>Hasil Prediksi</h1>
+        <h2> Your Prediction    :  {{prediction}} </h2>
+        <img src="{{img_path}}" height="200px" width="200px">
+        <h3> Confident          :  {{ "%.1f"|format(y) }}%</h3>
+          
+      </div>
+    </div>
+    <center>
+      <h2>Potato</h2>
+      <p>
+        Potato (kentang) adalah salah satu jenis tanaman yang memiliki bagian berdaging dari akar  biasanya digunakan sebagai sayuran. Kentang bisa menyehatkan jika disiapkan dengan cara yang benar. Asupan buah dan sayuran yang tinggi dapat bermanfaat bagi kesehatan dan mengurangi risiko banyak kondisi kesehatan yang berhubungan dengan gaya hidup. Kentang mengandung nutrisi penting terutama setelah dimasak yang dapat bermanfaat bagi kesehatan manusia dengan berbagai cara.
+      </p>
+    </center>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingone">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1. Perkedel Kentang</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Perkedel kentang</strong> merupakan salah satu makanan rumahan khas masyarakat Indonesia. Biasanya makanan yang satu ini sangat mudah untuk dijumpai di berbagai rumah makan di ibukota. Meskipun hanya terbuat dari kentang, namun perkedel kentang memiliki rasa yang nikmat dan tak jarang membuat orang jatuh hati padanya.
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>Kentang sebanyak beberapa buah</li>
+              <li>Siapkan beberapa batang daun seledri yang telah diiris tipis</li>
+              <li>Tepung terigu seba guna</li>
+              <li>Telur ayam</li>
+              <li>Minyak sayur</li>
+              <li>Bawang merah dan bawang putih</li>
+              <li>Lada putih bubuk</li>
+              <li>Royco rasa kaldu ayam</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/G6oF0NHli4o"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingtwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. Potato Teriyaki</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Potato teriyaki</strong> merupakan masakan olahan kentang yang dibumbui dengan bumbu teriyaki. 
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>500 gr kentang (1 lb of potato)</li>
+              <li>1/2 sdt garam (1/2 tsp of salt)</li>
+              <li>5 SDM tepung maizena (5 tbsp of corn starch)</li>
+              <li>9 bh cabai (9 pods of chili)</li>
+              <li>3 siung bawang putih (3 cloves of garlic)</li>
+              <li>3 siung bawang merah (3 bulbs of shallot)</li>
+              <li>100 CC air (4 oz of water)</li>
+              <li>2 SDM kecap manis (2 tbsp of sweet soy sauce)</li>
+              <li>1 sdt kecap asin (1 tsp of soy sauce)</li>
+              <li>1 sdt kaldu bubuk (1 tsp of stock powder)</li>
+              <li>2 sdt gula (2 tsp of sugar)</li>
+              <li>1 SDM wijen (1 tbsp of sesame) minyak secukupnya (oil)</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/DH-IsQLFUIg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingthree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. Balado Kentang</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Balado kentang</strong> merupakan masakan yang terbuat dari olahan kentang yang dibumbui dengan bumbu balado. Balado kentang biasa disajikan bersama nasi kuning dengan beragam lauk. 
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>Bawang merah</li>
+              <li>Bawang putih</li>
+              <li>Cabe rawit merah</li>
+              <li>Cabe merah</li>
+              <li>Sereh</li>
+              <li>Lengkuas</li>
+              <li>Daun salam</li>
+              <li>Penyedap</li>
+              <li>Merica</li>
+              <li>Garam</li>
+              <li>Gula pasir</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Kg8UOREuhsk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <footer>
+    <table style="margin-left: 250px;">
+      <tr>
+        <td><img src="/static/images/Logo VEGEID Web.png" alt="VEGEIG" width="150" height="150"/></td>
+        <td >
+          <h2>VegeID</h2>
+          <h3>Detection of Multiple Vegetable</h3>
+        </td>
+      </tr>
+    </table>
+    <table style="margin-top:5px; margin-left: 250px; margin-bottom: 5px;">
+      <tr>
+        <td>
+          <table style="margin-left: 25px;">
+            <td><ion-icon name="mail-outline"></ion-icon></td>
+            <td><h4>VegeID.Organizer@gmail.com</h4></td>
+          </table>
+        </td>
+        <td>
+          <table style="margin-left: 100px;">
+            <td><ion-icon name="call-outline"></ion-icon></td>
+            <td><h4>0895-3942-20248</h4></td>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div class="by">
+      <center><p>Detection of Multiple Vegetable by VegeIDTeams</p></center>
+    </div>
+  </footer>
+</html>

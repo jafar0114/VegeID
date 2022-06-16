@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pumpkin</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <title>VEGEID | Detection of Multiple Vegetable</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadaw-sm" style="background-color: #30cc00">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('main') }}">VEGEID</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('teams_page') }}">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('main') }}">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background">
+      <div class="box">
+          
+        <h1>Hasil Prediksi</h1>
+        <h2> Your Prediction    :  {{prediction}} </h2>
+        <img src="{{img_path}}" height="200px" width="200px">
+        <h3> Confident          :  {{ "%.1f"|format(y) }}%</h3>
+          
+      </div>
+    </div>
+    <center>
+      <h2>Pumpkin</h2>
+      <p>
+        Pumpkin (labu) merupakan buah yang dihasilkan oleh sejumlah anggota suku labu-labuan (Cucurbitaceae), terutama yang berukuran cukup besar dan berbentuk bulat atau memanjang. Tidak ada kriteria yang jelas mengenai pemanfaatannya, sehingga labu dapat dimakan segar atau diolah terlebih dahulu. Namun, labu biasanya tidak dimakan sebagai lalapan. Mengonsumsi labu dapat menetralkan radikal bebas.
+      </p>
+    </center>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingone">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1. Keripik Labu</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Keripik labu</strong> merupakan cemilan olahan labu yang dimasak menjadi kripik yang gurih an renyah.
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>250 gram labu kuning</li>
+              <li>250 gram terigu</li>
+              <li>4 sdm sagu / tapioka</li>
+              <li>1 sdt penyedap rasa</li>
+              <li>1 sdt ladaku sejeput garam</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Oj9txm7-4qQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingtwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. Dodol Labu Kuning</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Dodol labu kuning</strong> merupakan olahan labu yang dicampur dengan tepung berupa dodol yang menciptakan rasa manis yang legit.
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>Labu kuning 1kg (kupas lalu kukus)</li>
+              <li>Gula pasir 1/2 kg</li>
+              <li>Santan 1,5 liter (ambil dari 2buah kelapa tua)</li>
+              <li>Tepung beras putih 150gr</li>
+              <li>Tepung ketan putih 150gr</li>
+              <li>Vanili 1sdt</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/T7YNgUZfRro"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingthree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. Bubur Candil Labu Kuning / Kolak Biji Salak</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Bubur candil labu kuning / kolak biji salak</strong> merupakan salah satu olahan labu kuning berupa bubur candil dengan rasa yang manis.
+            <p>Bahan-bahan:</p>
+            <ul>
+              <li>150gr Labu Kuning (Berat bersih setelah dikukus</li>
+              <li>2sdm Gula Pasir</li>
+              <li>100gr Tepung Tapioka</li>
+              <li>200gr Gula merah</li>
+              <li>600ml Air</li>
+              <li>Daun Pandan</li>
+              <li>2sdm Tapioka (dilarutkan dengan Air)</li>
+            </ul>
+            <p>Bahan kuah santan:</p>
+            <ul>
+                <li>Santan</li>
+                <li>Garam</li>
+                <li>Pandan</li>
+            </ul>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/v4L3Ozmelew"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <footer>
+    <table style="margin-left: 250px;">
+      <tr>
+        <td><img src="/static/images/Logo VEGEID Web.png" alt="VEGEIG" width="150" height="150"/></td>
+        <td >
+          <h2>VegeID</h2>
+          <h3>Detection of Multiple Vegetable</h3>
+        </td>
+      </tr>
+    </table>
+    <table style="margin-top:5px; margin-left: 250px; margin-bottom: 5px;">
+      <tr>
+        <td>
+          <table style="margin-left: 25px;">
+            <td><ion-icon name="mail-outline"></ion-icon></td>
+            <td><h4>VegeID.Organizer@gmail.com</h4></td>
+          </table>
+        </td>
+        <td>
+          <table style="margin-left: 100px;">
+            <td><ion-icon name="call-outline"></ion-icon></td>
+            <td><h4>0895-3942-20248</h4></td>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div class="by">
+      <center><p>Detection of Multiple Vegetable by VegeIDTeams</p></center>
+    </div>
+  </footer>
+</html>
