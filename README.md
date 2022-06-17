@@ -8,8 +8,5 @@ dilengkapi rekomendasi resep dan vidio masakan.
 aplikasi vegeid dapat diakses pada laman berikut:
 https://vege-id.herokuapp.com
 
-code untuk pembuatan model dapat diakses pada laman berikut:
-colab.research.google.com/drive/1Ms_Px1ckMEcDMFaHk0coWasd-sY46Utf?authuser=1#scrollTo=u4qbX14QxcvQ
-
 Link vidio persentasi dapat diakses pada link berikut:
 https://drive.google.com/drive/folders/1gXKS2Ghv3p2JDnBGnE6UDX_kryddFGUD?usp=sharing
